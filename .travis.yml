@@ -10,3 +10,13 @@ install:
 
 script:
   - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  name: xiegudong45
+  email: xshxiegudong45@gmail.com
+  on:
+    branch: master
